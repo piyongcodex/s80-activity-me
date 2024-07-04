@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  font-family: Arial, sans-serif;
+}
+.nav-link,
+.navbar-brand {
+  color: black;
+}
+
+#hero {
+  background-image: url("./hero.png");
+  background-size: cover; /* Adjust to cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+h5 {
+  color: chocolate;
+}
+h6,
+p {
+  color: black;
+}
