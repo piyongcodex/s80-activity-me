@@ -1,8 +1,8 @@
-* {
+/* * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
+} */
 
 html,
 body {
@@ -15,7 +15,13 @@ body {
 }
 
 #hero {
-  background-image: url("./hero.png");
+  background-image: url("./hero.jpg");
+  background-size: cover; /* Adjust to cover the entire section */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Prevent repeating */
+}
+#about {
+  background-image: url("./about.jpg");
   background-size: cover; /* Adjust to cover the entire section */
   background-position: center; /* Center the image */
   background-repeat: no-repeat; /* Prevent repeating */
@@ -26,4 +32,140 @@ h5 {
 h6,
 p {
   color: black;
+}
+.card-img-top {
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Ensure the image covers the space without distortion */
+}
+.card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+#hero-text1 {
+  font-size: 2rem;
+  color: #b1470a;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  font-weight: bold;
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 10px;
+  border-radius: 5px;
+  display: inline-block;
+}
+
+#hero-text2 {
+  font-size: 2rem;
+  color: #b1470a;
+  text-shadow: 3px 3px 6px rgba(0, 0, 0, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn {
+  background: linear-gradient(45deg, #28a745, #218838);
+  border: none;
+  color: white;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border-radius: 50px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.btn strong {
+  font-weight: bold;
+}
+
+.btn:hover {
+  background: linear-gradient(45deg, #218838, #1e7e34);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+  transform: translateY(-2px);
+}
+
+.btn:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+#carousel img {
+  height: 300px; /* Set the desired height */
+  object-fit: cover; /* Ensures the image covers the entire area */
+}
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: black;
+}
+#featured-text {
+  font-family: "Roboto Slab", serif; /* Elegant serif font */
+  font-size: 3.5rem; /* Larger font size */
+  font-weight: 700; /* Stronger font weight */
+  color: #b1470a; /* Green color */
+  /* text-transform: uppercase; Uppercase text */
+  letter-spacing: 2px; /* Increased letter spacing */
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Subtle text shadow */
+  line-height: 1.2; /* Adjusted line height */
+  margin-bottom: 20px; /* Spacing at the bottom */
+}
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(54, 53, 53); /* Change color to orange */
+  text-decoration: none;
+}
+
+.navbar-brand:hover {
+  color: #ff7f00; /* Adjust hover color if needed */
+}
+
+.navbar-toggler {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+  padding: 10px;
+}
+
+.navbar-toggler-icon {
+  display: block;
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  border-radius: 1px;
+}
+
+.navbar-nav {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.nav-item {
+  display: inline-block;
+  margin: 0 10px;
+}
+
+.nav-link {
+  color: rgb(54, 53, 53);
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 15px;
+  transition: color 0.3s;
+}
+
+.nav-link:hover {
+  color: #ff7f00;
+}
+.navbar-brand img {
+  margin-right: 10px; /* Adjust as needed */
+}
+#why-text {
+  font-size: 1.5rem; /* Adjust font size */
+  font-weight: bold; /* Adjust font weight */
+  color: #333; /* Adjust text color */
+  text-align: left; /* Adjust text alignment */
+  margin-bottom: 10px; /* Adjust margin bottom */
 }
